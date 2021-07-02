@@ -54,6 +54,11 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.social-link:hover,
+.social-link:focus {
+  fill: #ffffff;
+  background-color: var(--accent-color);
+}
 
 /* ============= COMPONENTS ============= */
 .section-title {
@@ -76,6 +81,21 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
 /* =====================HEADER=======================*/
@@ -301,26 +321,10 @@ body {
   letter-spacing: var(--master-leter-spacing);
   color: var(--master-text-color);
 }
-.social-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.social-link-gray {
   fill: #afb1b8;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   background-color: #ffffff;
-}
-.social-link:hover,
-.social-link:focus {
-  fill: #ffffff;
-  background-color: var(--accent-color);
 }
 /* ===================regular-clients================== */
 .regular-clients-list {
@@ -352,6 +356,10 @@ body {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 .logo-footer {
   display: inline-block;
@@ -392,6 +400,32 @@ body {
 .location:focus,
 .address-company:focus {
   color: var(--accent-color);
+}
+.join-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: 12px;
+}
+.social-list-header {
+  margin-left: -10px;
+}
+.social-item-header {
+  margin-left: 10px;
+}
+.join {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: var(--master-leter-spacing);
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.social-link-white {
+  background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
 }
 /* ======================PORTFOLIO============================= */
 /* =====================ART GALLERY========== */
@@ -443,7 +477,9 @@ body {
   background-color: #ffffff;
   padding: 20px 24px;
 }
-.gallery-item:hover {
+.work-reference:hover,
+.work-reference:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
