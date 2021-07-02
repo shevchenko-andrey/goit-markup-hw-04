@@ -161,6 +161,10 @@ body {
 .hero {
   text-align: center;
   background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/bc.jpg);
+  background-size: cover;
+
   padding: 200px 0;
 }
 
