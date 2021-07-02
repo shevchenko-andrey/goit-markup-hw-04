@@ -126,6 +126,13 @@ body {
 }
 .contact-link {
   color: var(--master-text-color);
+  margin-left: 10px;
+}
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .contact-list:not(:first-child) {
   margin-left: 50px;
