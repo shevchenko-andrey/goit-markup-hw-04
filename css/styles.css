@@ -206,11 +206,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: var(--basic-content-indentation);
 }
 .feature-item-icon {
   padding: 25px 100px;
-
-  width: 270px;
+  border: none;
+  border-radius: 4px;
   height: 120px;
   background: #f5f4fa;
 }
@@ -277,6 +278,8 @@ body {
 .team-card {
   padding-top: var(--basic-content-indentation);
   padding-bottom: var(--basic-content-indentation);
+  padding-left: 32px;
+  padding-right: 32px;
   width: 270px;
   text-align: center;
   background: #ffffff;
@@ -292,10 +295,32 @@ body {
   color: var(--master-heder-color);
 }
 .team-section-text {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: var(--master-leter-spacing);
   color: var(--master-text-color);
+}
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.social-link:hover,
+.social-link:focus {
+  fill: #ffffff;
+  background-color: var(--accent-color);
 }
 /* =======================FOOTER========================= */
 .footer {
