@@ -144,15 +144,21 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contact-link {
-  color: var(--master-text-color);
-  margin-left: 10px;
-}
 .contact-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+.contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--master-text-color);
+  fill: var(--master-text-color);
+}
+.contact-icons {
+  margin-right: 10px;
 }
 .contact-list:not(:first-child) {
   margin-left: 50px;
@@ -175,6 +181,7 @@ body {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* =====================HERO========================= */
